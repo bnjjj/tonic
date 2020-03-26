@@ -1,0 +1,17 @@
+[package]
+name = "tonic-health"
+version = "0.1.0"
+authors = ["James Nugent <james@jen20.com>"]
+edition = "2018"
+
+[dependencies]
+tokio = { version = "0.2", features = ["sync"] }
+tonic = { path = "../tonic" }
+bytes = "0.5"
+prost = "0.6"
+
+[dev-dependencies]
+tokio = { version = "0.2", features = ["rt-core", "macros"]}
+
+[build-dependencies]
+tonic-build = { path = "../tonic-build" }
